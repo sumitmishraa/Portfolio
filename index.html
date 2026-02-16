@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumit Mishra - AI Web Developer | Vibe Coding Expert</title>
+    <meta name="description"
+        content="Full-stack developer specializing in AI applications, automation, and rapid MVP development. Built with Lovable, Bolt, Cursor. Bengaluru, India.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sumit Mishra - AI Web Developer | Vibe Coding Expert">
+    <meta property="og:description"
+        content="Full-stack developer specializing in AI applications, automation, and rapid MVP development.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sumitmishra.dev">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sumit Mishra - AI Web Developer">
+    <meta name="twitter:description"
+        content="Full-stack developer specializing in AI applications, automation, and rapid MVP development.">
+
+    <!-- Favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ======== NAVIGATION ======== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">SUMIT MISHRA</a>
+            <div class="nav-links" id="navLinks">
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <a href="#contact" class="nav-cta btn btn-dark">Book a call</a>
+            <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+                <i class="ri-menu-3-line"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+            <i class="ri-close-line"></i>
+        </button>
+        <div class="mobile-menu-links">
+            <a href="#services" class="mobile-link">Services</a>
+            <a href="#work" class="mobile-link">Work</a>
+            <a href="#testimonials" class="mobile-link">Testimonials</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="#contact" class="btn btn-dark mobile-cta">Book a call</a>
+        </div>
+    </div>
+
+    <!-- ======== HERO SECTION ======== -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <!-- Left: Main Hero Card -->
+                <div class="hero-main-card bento-card animate-in">
+                    <span class="pill pill-available">🟢 AVAILABLE FOR WORK</span>
+                    <h1 class="hero-headline">
+                        Hi, I'm a<br>
+                        <span class="text-accent">AI Web</span><br>
+                        Developer
+                    </h1>
+                    <p class="hero-sub">I have 2+ years of experience building AI-powered applications with vibe coding
+                        tools for startups and businesses</p>
+                    <a href="#contact" class="btn btn-dark btn-lg">Contact Us <i class="ri-arrow-right-up-line"></i></a>
+                </div>
+
+                <!-- Right Column -->
+                <div class="hero-right">
+                    <!-- Profile Card -->
+                    <div class="hero-profile-card bento-card animate-in" style="animation-delay:.1s">
+                        <div class="profile-header">
+                            <img src="profile.jpg" alt="Sumit Mishra" class="profile-photo" loading="eager">
+                            <div>
+                                <h3 class="profile-name">Sumit Mishra</h3>
+                                <p class="profile-location"><i class="ri-map-pin-line"></i> Bengaluru, India</p>
+                            </div>
+                        </div>
+                        <p class="profile-bio">I build things that usually take teams weeks in just days. AI apps, smart
+                            automations, agentic workflows that run themselves, if it can be built with code and AI,
+                            I've probably already shipped it. Scroll down and see for yourself 👇</p>
+                        <div class="profile-footer">
+                            <span class="pill pill-expert">💼 AI DEV EXPERT</span>
+                        </div>
+                    </div>
+
+                    <!-- Impact Stats Card -->
+                    <div class="hero-stats-card bento-card animate-in" style="animation-delay:.2s">
+                        <div class="stats-row">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span>
+                                <span class="stat-label">Projects Shipped</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="3">0</span><span class="stat-suffix"> days</span>
+                                <span class="stat-label">Avg. MVP Delivery</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="500">0</span><span class="stat-suffix">+</span>
+                                <span class="stat-label">Active Users</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Scroll Teaser -->
+                    <div class="hero-scroll-teaser animate-in" style="animation-delay:.4s">
+                        <span class="scroll-text">Scroll to see what I can build for you</span>
+                        <div class="scroll-arrow">
+                            <i class="ri-arrow-down-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== MISSION SECTION ======== -->
+    <section class="mission" id="about">
+        <div class="container">
+            <div class="mission-card animate-in">
+                <h2 class="mission-text">My mission is to assist startups and enterprises in creating AI-powered
+                    products that users actually love</h2>
+                <div class="mission-logos">
+                    <span class="mission-logo">Stripe</span>
+                    <span class="mission-logo">Google</span>
+                    <span class="mission-logo">Amazon</span>
+                    <span class="mission-logo">Bitcoin</span>
+                    <span class="mission-logo">HubSpot</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== SERVICES SECTION ======== -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title animate-in">How Can I Assist You?</h2>
+            <div class="services-grid">
+
+                <div class="service-card bento-card animate-in">
+                    <div class="service-header">
+                        <span class="service-icon">🚀</span>
+                        <span class="service-number">01</span>
+                    </div>
+                    <h3 class="service-title">SaaS Landing Pages</h3>
+                    <p class="service-desc">Conversion-optimized pages with AI chatbots and waitlist systems</p>
+                </div>
+
+                <div class="service-card bento-card animate-in">
+                    <div class="service-header">
+                        <span class="service-icon">🤖</span>
+                        <span class="service-number">02</span>
+                    </div>
+                    <h3 class="service-title">AI-Powered Applications</h3>
+                    <p class="service-desc">GPT & Claude integrations for intelligent business features</p>
+                </div>
+
+                <div class="service-card bento-card animate-in">
+                    <div class="service-header">
+                        <span class="service-icon">⚙️</span>
+                        <span class="service-number">03</span>
+                    </div>
+                    <h3 class="service-title">Business Automation</h3>
+                    <p class="service-desc">Make.com & n8n workflows saving 20+ hours weekly</p>
+                </div>
+
+                <div class="service-card bento-card animate-in">
+                    <div class="service-header">
+                        <span class="service-icon">🧩</span>
+                        <span class="service-number">04</span>
+                    </div>
+                    <h3 class="service-title">Chrome Extensions</h3>
+                    <p class="service-desc">Productivity tools for professionals — 500+ active users</p>
+                </div>
+
+                <div class="service-card bento-card animate-in">
+                    <div class="service-header">
+                        <span class="service-icon">🔗</span>
+                        <span class="service-number">05</span>
+                    </div>
+                    <h3 class="service-title">API Integrations</h3>
+                    <p class="service-desc">Connect any platform with webhooks and custom APIs</p>
+                </div>
+
+                <div class="service-card bento-card animate-in">
+                    <div class="service-header">
+                        <span class="service-icon">📊</span>
+                        <span class="service-number">06</span>
+                    </div>
+                    <h3 class="service-title">Custom Dashboards</h3>
+                    <p class="service-desc">Real-time analytics and data visualization panels</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== TECH STACK SECTION ======== -->
+    <section class="tech-stack" id="tech">
+        <div class="container">
+            <h2 class="section-title animate-in">Technologies I Master</h2>
+            <div class="tech-grid">
+                <!-- Vibe Coding Tools -->
+                <div class="tech-card bento-card animate-in">
+                    <span class="tech-icon"><img src="https://cdn.brandfetch.io/lovable.dev/w/512" alt="Lovable"
+                            loading="lazy"></span>
+                    <span class="tech-name">Lovable.dev</span>
+                </div>
+                <div class="tech-card bento-card animate-in">
+                    <span class="tech-icon"><img src="https://cdn.brandfetch.io/bolt.new/w/512" alt="Bolt"
+                            loading="lazy"></span>
+                    <span class="tech-name">Bolt.new</span>
+                </div>
+                <div class="tech-card bento-card animate-in">
+                    <span class="tech-icon"><img src="https://cdn.brandfetch.io/cursor.com/w/512" alt="Cursor"
+                            loading="lazy"></span>
+                    <span class="tech-name">Cursor AI</span>
+                </div>
+                <div class="tech-card bento-card animate-in">
+                    <span class="tech-icon"><img src="https://cdn.simpleicons.org/replit/F26207" alt="Replit"
+                            loading="lazy"></span>
+                    <span class="tech-name">Replit</span>
+                </div>
+                <div class="tech-card bento-card animate-in">
+                    <span class="tech-icon"><img src="https://cdn.brandfetch.io/v0.dev/w/512" alt="v0"
+                            loading="lazy"></span>
+                    <span class="tech-name">v0.dev</span>
+                </div>
+
+                <!-- Frontend -->
+                <div class="tech-card bento-card animate-in">
+                    <span class="tech-icon"><img src="https://cdn.simpleicons.org/react/61DAFB" alt="React"
+                            loading="lazy"></span>
+                    <span class="tech-name">React</span>
+                </div>
+                <div class="tech-card bento-card animate-in">
+                    <span class="tech-icon"><img src="https://cdn.simpleicons.org/nextdotjs/white" alt="Next.js"
+                            loading="lazy"></span>
+                    <span class="tech-name">Next.js</span>
+                </div>
+                <div class="tech-card bento-card animate-in">
+                    <span class="tech-icon"><img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript"
+                            loading="lazy"></span>
+                    <span class="tech-name">TypeScript</span>
+                </div>
+                <div class="tech-card bento-card animate-in">
+                    <span class="tech-icon"><img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind"
+                            loading="lazy"></span>
+                    <span class="tech-name">Tailwind CSS</span>
+                </div>
+                <div class="tech-card bento-card animate-in">
+                    <span class="tech-icon"><img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="Node.js"
+                            loading="lazy"></span>
+                    <span class="tech-name">Node.js</span>
+                </div>
+
+                <!-- AI & Backend -->
+                <div class="tech-card bento-card animate-in">
+                    <span class="tech-icon"><img src="https://cdn.simpleicons.org/openai/white" alt="OpenAI"
+                            loading="lazy"></span>
+                    <span class="tech-name">OpenAI</span>
+                </div>
+                <div class="tech-card bento-card animate-in">
+                    <span class="tech-icon"><img src="https://cdn.brandfetch.io/anthropic.com/w/512" alt="Claude"
+                            loading="lazy"></span>
+                    <span class="tech-name">Claude</span>
+                </div>
+                <div class="tech-card bento-card animate-in">
+                    <span class="tech-icon"><img src="https://cdn.simpleicons.org/supabase/3ECF8E" alt="Supabase"
+                            loading="lazy"></span>
+                    <span class="tech-name">Supabase</span>
+                </div>
+                <div class="tech-card bento-card animate-in">
+                    <span class="tech-icon"><img src="https://cdn.simpleicons.org/firebase/FFCA28" alt="Firebase"
+                            loading="lazy"></span>
+                    <span class="tech-name">Firebase</span>
+                </div>
+                <div class="tech-card bento-card animate-in">
+                    <span class="tech-icon"><img src="https://cdn.simpleicons.org/vercel/white" alt="Vercel"
+                            loading="lazy"></span>
+                    <span class="tech-name">Vercel</span>
+                </div>
+
+                <!-- Automation -->
+                <div class="tech-card bento-card animate-in">
+                    <span class="tech-icon"><img src="https://cdn.simpleicons.org/make/6118EB" alt="Make"
+                            loading="lazy"></span>
+                    <span class="tech-name">Make.com</span>
+                </div>
+                <div class="tech-card bento-card animate-in">
+                    <span class="tech-icon"><img src="https://cdn.simpleicons.org/zapier/FF4A00" alt="Zapier"
+                            loading="lazy"></span>
+                    <span class="tech-name">Zapier</span>
+                </div>
+                <div class="tech-card bento-card animate-in">
+                    <span class="tech-icon"><img src="https://cdn.simpleicons.org/n8n/EA4B71" alt="n8n"
+                            loading="lazy"></span>
+                    <span class="tech-name">n8n</span>
+                </div>
+                <div class="tech-card bento-card animate-in">
+                    <span class="tech-icon"><img src="https://cdn.simpleicons.org/airtable/18BFFF" alt="Airtable"
+                            loading="lazy"></span>
+                    <span class="tech-name">Airtable</span>
+                </div>
+                <div class="tech-card bento-card animate-in">
+                    <span class="tech-icon"><img src="https://cdn.simpleicons.org/stripe/635BFF" alt="Stripe"
+                            loading="lazy"></span>
+                    <span class="tech-name">Stripe</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== PORTFOLIO SECTION ======== -->
+    <section class="portfolio" id="work">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title animate-in">Selected work</h2>
+                <a href="#" class="btn btn-dark btn-sm animate-in">See All</a>
+            </div>
+            <div class="portfolio-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card bento-card animate-in" data-project="1">
+                    <div class="project-image">
+                        <div class="project-placeholder"
+                            style="background-image: url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=800'); background-size: cover; background-position: center;">
+                            <div class="project-overlay">
+                                <span>AI Lead Gen Agent</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">AGENTIC WORKFLOW</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">n8n</span>
+                        <span class="tag">OPENAI</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card bento-card animate-in" data-project="2">
+                    <div class="project-image">
+                        <div class="project-placeholder"
+                            style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800'); background-size: cover; background-position: center;">
+                            <div class="project-overlay">
+                                <span>SaaS Starter Kit</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">SAAS PRODUCT</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">NEXT.JS</span>
+                        <span class="tag">SUPABASE</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card bento-card animate-in" data-project="3">
+                    <div class="project-image">
+                        <div class="project-placeholder"
+                            style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800'); background-size: cover; background-position: center;">
+                            <div class="project-overlay">
+                                <span>Research Agent</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">AI TOOL</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">PLASMO</span>
+                        <span class="tag">ANTHROPIC</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card bento-card animate-in" data-project="4">
+                    <div class="project-image">
+                        <div class="project-placeholder"
+                            style="background-image: url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800'); background-size: cover; background-position: center;">
+                            <div class="project-overlay">
+                                <span>Finance Dashboard</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">BUSINESS OPS</span>
+                        <span class="project-year">2023</span>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">MAKE.COM</span>
+                        <span class="tag">AIRTABLE</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== TESTIMONIALS SECTION ======== -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title animate-in">What Clients Say</h2>
+            <div class="testimonials-grid">
+
+                <div class="testimonial-card bento-card animate-in">
+                    <div class="stars">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                            class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                    </div>
+                    <p class="testimonial-quote">"Delivered my SaaS MVP in 3 days. Speed and quality both incredible.
+                        Highly recommend!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="ri-user-line"></i></div>
+                        <div>
+                            <span class="author-name">Rachel Morrison</span>
+                            <span class="author-title">Founder, TechFlow</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card bento-card animate-in">
+                    <div class="stars">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                            class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                    </div>
+                    <p class="testimonial-quote">"The AI automation saves us 20+ hours weekly. Best ROI on any business
+                        investment."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="ri-user-line"></i></div>
+                        <div>
+                            <span class="author-name">David Park</span>
+                            <span class="author-title">CEO, GrowthLabs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card bento-card animate-in">
+                    <div class="stars">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                            class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                    </div>
+                    <p class="testimonial-quote">"Finally found someone who understands both tech and business. Absolute
+                        game changer."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="ri-user-line"></i></div>
+                        <div>
+                            <span class="author-name">Sarah Chen</span>
+                            <span class="author-title">COO, ScaleUp</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== PROCESS SECTION ======== -->
+    <section class="process" id="process">
+        <div class="container">
+            <h2 class="section-title animate-in">My Process</h2>
+            <div class="process-grid">
+
+                <div class="process-card bento-card animate-in">
+                    <span class="process-step">01</span>
+                    <div class="process-icon"><i class="ri-search-eye-line"></i></div>
+                    <h3>Discovery</h3>
+                    <p>Understanding your vision and requirements</p>
+                </div>
+
+                <div class="process-card bento-card animate-in">
+                    <span class="process-step">02</span>
+                    <div class="process-icon"><i class="ri-palette-line"></i></div>
+                    <h3>Design</h3>
+                    <p>Creating mockups and user flows</p>
+                </div>
+
+                <div class="process-card bento-card animate-in">
+                    <span class="process-step">03</span>
+                    <div class="process-icon"><i class="ri-code-s-slash-line"></i></div>
+                    <h3>Development</h3>
+                    <p>Building with AI-powered tools</p>
+                </div>
+
+                <div class="process-card bento-card animate-in">
+                    <span class="process-step">04</span>
+                    <div class="process-icon"><i class="ri-rocket-2-line"></i></div>
+                    <h3>Launch</h3>
+                    <p>Deploy and iterate based on feedback</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== CTA SECTION ======== -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <div class="cta-content animate-in">
+                <span class="pill pill-cta">Let's work together</span>
+                <h2 class="cta-headline">Have a project in mind?</h2>
+                <p class="cta-sub">I'm currently available for freelance work</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-dark btn-lg" id="openContactModal">Schedule a Call <i
+                            class="ri-calendar-line"></i></button>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sumitmishraa.business@gmail.com&su=Project%20Inquiry"
+                        target="_blank" rel="noopener" class="btn btn-outline btn-lg">Send Email <i
+                            class="ri-mail-line"></i></a>
+                </div>
+                <p class="cta-response">⚡ Response time: Under 2 hours</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== FOOTER ======== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="footer-logo">SUMIT MISHRA</span>
+                    <p class="footer-tagline">AI-Powered Web Development</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#services">Services</a>
+                    <a href="#work">Work</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/sumitmishraa" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            class="ri-github-fill"></i></a>
+                    <a href="https://linkedin.com/in/sumit-mishra-9365442a0" target="_blank" rel="noopener"
+                        aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sumitmishraa.business@gmail.com&su=Project%20Inquiry"
+                        target="_blank" rel="noopener" aria-label="Email"><i class="ri-mail-fill"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Sumit Mishra | Built with Bolt.new</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ======== CONTACT MODAL ======== -->
+    <div class="modal-overlay" id="contactModal">
+        <div class="modal">
+            <button class="modal-close" id="closeContactModal" aria-label="Close modal">
+                <i class="ri-close-line"></i>
+            </button>
+            <h2 class="modal-title">Let's Talk</h2>
+            <p class="modal-sub">Tell me about your project</p>
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                <div class="form-group">
+                    <label for="formName">Name *</label>
+                    <input type="text" id="formName" name="name" required placeholder="Your name">
+                    <span class="form-error" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="formEmail">Email *</label>
+                    <input type="email" id="formEmail" name="email" required placeholder="you@example.com">
+                    <span class="form-error" id="emailError"></span>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="formProjectType">Project Type</label>
+                        <select id="formProjectType" name="project_type">
+                            <option value="">Select type...</option>
+                            <option value="SaaS Landing Page">SaaS Landing Page</option>
+                            <option value="AI Application">AI Application</option>
+                            <option value="Business Automation">Business Automation</option>
+                            <option value="Chrome Extension">Chrome Extension</option>
+                            <option value="API Integration">API Integration</option>
+                            <option value="Custom Dashboard">Custom Dashboard</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="formBudget">Budget Range</label>
+                        <select id="formBudget" name="budget">
+                            <option value="">Select budget...</option>
+                            <option value="Under $500">Under $500</option>
+                            <option value="$500 - $1,000">$500 - $1,000</option>
+                            <option value="$1,000 - $2,000">$1,000 - $2,000</option>
+                            <option value="$2,000 - $5,000">$2,000 - $5,000</option>
+                            <option value="$5,000+">$5,000+</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="formMessage">Message</label>
+                    <textarea id="formMessage" name="message" rows="4"
+                        placeholder="Tell me about your project..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark btn-lg btn-full" id="formSubmit">
+                    <span class="btn-text">Send Message</span>
+                    <span class="btn-loading" style="display:none"><i class="ri-loader-4-line ri-spin"></i>
+                        Sending...</span>
+                </button>
+            </form>
+            <div class="form-success" id="formSuccess" style="display:none">
+                <i class="ri-checkbox-circle-fill"></i>
+                <p>Thanks! I'll respond within 2 hours ✓</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======== PROJECT MODAL ======== -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal modal-project">
+            <button class="modal-close" id="closeProjectModal" aria-label="Close modal">
+                <i class="ri-close-line"></i>
+            </button>
+            <div class="project-modal-image" id="projectModalImage"></div>
+            <div class="project-modal-header">
+                <div>
+                    <h2 class="modal-title" id="projectModalTitle"></h2>
+                    <p class="project-modal-category" id="projectModalCategory"></p>
+                </div>
+                <div class="project-modal-tags" id="projectModalTags"></div>
+            </div>
+
+            <div class="project-modal-body">
+                <div class="project-section">
+                    <h3>The Problem</h3>
+                    <p id="projectModalProblem"></p>
+                </div>
+                <div class="project-section">
+                    <h3>The Solution</h3>
+                    <p id="projectModalSolution"></p>
+                </div>
+                <div class="project-section">
+                    <h3>How It Was Built</h3>
+                    <ul class="project-process-list" id="projectModalProcess"></ul>
+                </div>
+            </div>
+
+            <a href="#" class="btn btn-dark btn-lg btn-full" id="projectModalLink" target="_blank" rel="noopener">
+                View Live Demo <i class="ri-external-link-line"></i>
+            </a>
+        </div>
+    </div>
+
+    <script type="module" src="/script.js"></script>
+</body>
+
+</html>
