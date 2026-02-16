@@ -670,6 +670,43 @@
         </div>
     </div>
 
+
+    <!-- ======== CHATBOT ======== -->
+    <div class="chatbot-container">
+        <!-- Chat Window -->
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <div class="chat-avatar">AI</div>
+                    <div>
+                        <h3>VibeBuild AI</h3>
+                        <span class="chat-status">Online</span>
+                    </div>
+                </div>
+                <button class="chat-close" id="chatClose"><i class="ri-close-line"></i></button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <!-- Welcome Message -->
+                <div class="message message-ai">
+                    <div class="message-content">
+                        Hi! I'm VibeBuild AI. Ask me anything about Sumit's work or skills!
+                    </div>
+                </div>
+            </div>
+            <form class="chat-input-area" id="chatForm">
+                <input type="text" id="chatInput" placeholder="Type a message..." autocomplete="off">
+                <button type="submit" class="chat-send" id="chatSend" disabled>
+                    <i class="ri-send-plane-fill"></i>
+                </button>
+            </form>
+        </div>
+
+        <!-- Chat Button -->
+        <button class="chat-btn" id="chatBtn" aria-label="Open Chat">
+            <i class="ri-chat-smile-2-fill"></i>
+        </button>
+    </div>
+
     <script type="module" src="/script.js"></script>
 </body>
 

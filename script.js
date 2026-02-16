@@ -317,3 +317,84 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
+
+/* ---------- Chatbot Logic ---------- */
+const chatBtn = document.getElementById('chatBtn');
+const chatWindow = document.getElementById('chatWindow');
+const chatClose = document.getElementById('chatClose');
+const chatForm = document.getElementById('chatForm');
+const chatInput = document.getElementById('chatInput');
+const chatMessages = document.getElementById('chatMessages');
+const chatSend = document.getElementById('chatSend');
+
+function toggleChat() {
+    chatWindow.classList.toggle('active');
+}
+
+chatBtn.addEventListener('click', toggleChat);
+chatClose.addEventListener('click', toggleChat);
+
+chatInput.addEventListener('input', () => {
+    chatSend.disabled = !chatInput.value.trim();
+});
+
+function addMessage(text, sender) {
+    const div = document.createElement('div');
+    div.className = `message message-${sender}`;
+    div.innerHTML = `<div class="message-content">${text}</div>`;
+    chatMessages.appendChild(div);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+function addLoading() {
+    const div = document.createElement('div');
+    div.className = 'message message-ai message-loading';
+    div.id = 'chatLoading';
+    div.innerHTML = `
+        <div class="message-content">
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+        </div>`;
+    chatMessages.appendChild(div);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+function removeLoading() {
+    const loading = document.getElementById('chatLoading');
+    if (loading) loading.remove();
+}
+
+chatForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const message = chatInput.value.trim();
+    if (!message) return;
+
+    // Add user message
+    addMessage(message, 'user');
+    chatInput.value = '';
+    chatSend.disabled = true;
+
+    // Show loading
+    addLoading();
+
+    try {
+        const res = await fetch('/api/chat', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ message })
+        });
+
+        const data = await res.json();
+        removeLoading();
+
+        if (data.error) {
+            addMessage("Sorry, I encountered an error. Please try again.", 'ai');
+        } else {
+            addMessage(data.reply, 'ai');
+        }
+
+    } catch (err) {
+        removeLoading();
+        addMessage("Network error. Please check your connection.", 'ai');
+        console.error(err);
+    }
+});
