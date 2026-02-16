@@ -191,6 +191,7 @@ contactForm.addEventListener('submit', async (e) => {
                     name: data.name,
                     email: data.email,
                     project_type: data.project_type,
+                    budget: data.budget,
                     message: data.message
                 }
             ]);
