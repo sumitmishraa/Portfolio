@@ -180,6 +180,10 @@ contactForm.addEventListener('submit', async (e) => {
         const data = Object.fromEntries(formData.entries());
 
         // Insert into Supabase
+        if (!supabase) {
+            throw new Error('Supabase client is not initialized. Check your environment variables.');
+        }
+
         const { error } = await supabase
             .from('contacts')
             .insert([
@@ -202,7 +206,7 @@ contactForm.addEventListener('submit', async (e) => {
         btnText.style.display = '';
         btnLoading.style.display = 'none';
         submitBtn.disabled = false;
-        alert('Error submitting form. Please try again.');
+        alert(`Error: ${err.message || 'Unknown error occurred'}`);
     }
 });
 
