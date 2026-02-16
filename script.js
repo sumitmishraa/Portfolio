@@ -179,6 +179,8 @@ contactForm.addEventListener('submit', async (e) => {
         const formData = new FormData(contactForm);
         const data = Object.fromEntries(formData.entries());
 
+        console.log('Form Data:', data); // Debug log
+
         // Insert into Supabase
         if (!supabase) {
             throw new Error('Supabase client is not initialized. Check your environment variables.');
@@ -191,7 +193,7 @@ contactForm.addEventListener('submit', async (e) => {
                     name: data.name,
                     email: data.email,
                     project_type: data.project_type,
-                    budget: data.budget,
+                    budget: data.budget || '', // Ensure it's not null/undefined
                     message: data.message
                 }
             ]);
